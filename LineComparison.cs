@@ -8,7 +8,13 @@ namespace LineComparisonUsingOops
 {
     internal class LineComparison
     {
-        public double Length()
+        public double LengthFormula(int X1, int X2, int Y1, int Y2)
+        {
+            double length = Math.Sqrt(Math.Pow((X2 - X1), 2) + Math.Pow((Y2 - Y1), 2));
+            Console.WriteLine("Length of Line is: " + length);
+            return length;
+        }
+        public int Length()
         {
             Console.WriteLine("Enter End points");
             Console.WriteLine("Enter x1: ");
@@ -19,9 +25,11 @@ namespace LineComparisonUsingOops
             int x2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter y2: ");
             int y2 = Convert.ToInt32(Console.ReadLine());
-            double length = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
-            Console.WriteLine("Length of Line is: " + length);
-            return length;
+            return x1;
+            return x2;
+            return y1;
+            return y2;
+
         }
         public void Comparsion(double x, double y)
         {
